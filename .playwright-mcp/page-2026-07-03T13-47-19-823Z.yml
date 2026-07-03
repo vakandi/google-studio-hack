@@ -1,0 +1,24 @@
+- generic [ref=f2e5]:
+  - generic [ref=f2e6]:
+    - img "Directus" [ref=f2e8]
+    - generic [ref=f2e9]:
+      - heading "Directus" [level=1] [ref=f2e10]:
+        - generic [ref=f2e11]: Directus
+      - generic [ref=f2e12]: Application
+  - generic [ref=f2e13]:
+    - heading "Sign In" [level=1] [ref=f2e15]:
+      - generic [ref=f2e16]: Sign In
+    - generic [ref=f2e17]:
+      - textbox "Email" [active] [ref=f2e20]
+      - generic [ref=f2e22]:
+        - textbox "Password" [ref=f2e23]
+        - button "visibility" [ref=f2e25] [cursor=pointer]:
+          - generic [ref=f2e26]: visibility
+      - generic [ref=f2e27]:
+        - button "Sign In" [ref=f2e29] [cursor=pointer]:
+          - generic [ref=f2e31]: Sign In
+        - link "Forgot Password" [ref=f2e32] [cursor=pointer]:
+          - /url: /admin/reset-password
+  - generic [ref=f2e33]:
+    - generic [ref=f2e35]: lock
+    - text: Not Authenticated

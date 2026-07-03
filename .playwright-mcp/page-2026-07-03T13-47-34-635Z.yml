@@ -1,0 +1,591 @@
+- generic [ref=f2e50]:
+  - list [ref=f2e51]:
+    - link "Skip to Module Navigation" [ref=f2e52] [cursor=pointer]:
+      - /url: /admin/settings/data-model#module-navigation
+    - link "Skip to Main Content" [ref=f2e53] [cursor=pointer]:
+      - /url: /admin/settings/data-model#main-content
+    - link "Skip to Sidebar" [ref=f2e54] [cursor=pointer]:
+      - /url: /admin/settings/data-model#sidebar
+  - generic [ref=f2e55]:
+    - generic [ref=f2e58]:
+      - link [ref=f2e60] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=f2e63]
+      - link "people_alt" [ref=f2e66] [cursor=pointer]:
+        - /url: /admin/users
+        - generic [ref=f2e69]: people_alt
+      - link "folder" [ref=f2e71] [cursor=pointer]:
+        - /url: /admin/files
+        - generic [ref=f2e74]: folder
+      - link "insights" [ref=f2e76] [cursor=pointer]:
+        - /url: /admin/insights
+        - generic [ref=f2e79]: insights
+      - link "rocket_launch" [ref=f2e81] [cursor=pointer]:
+        - /url: /admin/deployments
+        - generic [ref=f2e84]: rocket_launch
+      - link "help" [ref=f2e86] [cursor=pointer]:
+        - /url: https://docs.directus.io
+        - generic [ref=f2e89]: help
+      - link "settings" [ref=f2e91] [cursor=pointer]:
+        - /url: /admin/settings
+        - generic [ref=f2e94]: settings
+    - generic [ref=f2e95]:
+      - button "notifications" [ref=f2e98] [cursor=pointer]:
+        - generic [ref=f2e101]: notifications
+      - generic [ref=f2e102]:
+        - button [ref=f2e105] [cursor=pointer]:
+          - img [ref=f2e108]
+        - link "Wael Bousfira" [ref=f2e111] [cursor=pointer]:
+          - /url: /admin/users/8ae31536-3f8f-4274-b113-f711141f68c4
+          - img "Wael Bousfira" [ref=f2e113]
+  - generic [ref=f2e114]:
+    - generic [ref=f2e115]:
+      - list [ref=f2e116]:
+        - link "Skip to Navigation" [ref=f2e117] [cursor=pointer]:
+          - /url: /admin/settings/data-model#navigation
+        - link "Skip to Main Content" [ref=f2e118] [cursor=pointer]:
+          - /url: /admin/settings/data-model#main-content
+        - link "Skip to Sidebar" [ref=f2e119] [cursor=pointer]:
+          - /url: /admin/settings/data-model#sidebar
+      - navigation "Module Navigation" [ref=f2e120]:
+        - generic [ref=f2e121]:
+          - generic [ref=f2e123]: Directus
+          - button "left_panel_close" [ref=f2e124] [cursor=pointer]:
+            - generic [ref=f2e125]: left_panel_close
+        - list [ref=f2e127]:
+          - link "database Data Model" [ref=f2e128] [cursor=pointer]:
+            - /url: /admin/settings/data-model
+            - generic [ref=f2e131]: database
+            - generic [ref=f2e134]: Data Model
+          - link "bolt Flows" [ref=f2e135] [cursor=pointer]:
+            - /url: /admin/settings/flows
+            - generic [ref=f2e138]: bolt
+            - generic [ref=f2e141]: Flows
+          - separator [ref=f2e143]
+          - link "group User Roles" [ref=f2e144] [cursor=pointer]:
+            - /url: /admin/settings/roles
+            - generic [ref=f2e147]: group
+            - generic [ref=f2e150]: User Roles
+          - link "admin_panel_settings Access Policies" [ref=f2e151] [cursor=pointer]:
+            - /url: /admin/settings/policies
+            - generic [ref=f2e154]: admin_panel_settings
+            - generic [ref=f2e157]: Access Policies
+          - separator [ref=f2e159]
+          - link "tune Settings" [ref=f2e160] [cursor=pointer]:
+            - /url: /admin/settings/project
+            - generic [ref=f2e163]: tune
+            - generic [ref=f2e166]: Settings
+          - link "palette Appearance" [ref=f2e167] [cursor=pointer]:
+            - /url: /admin/settings/appearance
+            - generic [ref=f2e170]: palette
+            - generic [ref=f2e173]: Appearance
+          - link "bookmark Bookmarks" [ref=f2e174] [cursor=pointer]:
+            - /url: /admin/settings/presets
+            - generic [ref=f2e177]: bookmark
+            - generic [ref=f2e180]: Bookmarks
+          - link "translate Translations" [ref=f2e181] [cursor=pointer]:
+            - /url: /admin/settings/translations
+            - generic [ref=f2e184]: translate
+            - generic [ref=f2e187]: Translations
+          - link "smart_toy AI" [ref=f2e188] [cursor=pointer]:
+            - /url: /admin/settings/ai
+            - generic [ref=f2e191]: smart_toy
+            - generic [ref=f2e194]: AI
+          - separator [ref=f2e196]
+          - link "storefront Marketplace" [ref=f2e197] [cursor=pointer]:
+            - /url: /admin/settings/marketplace
+            - generic [ref=f2e200]: storefront
+            - generic [ref=f2e203]: Marketplace
+          - link "category Extensions" [ref=f2e204] [cursor=pointer]:
+            - /url: /admin/settings/extensions
+            - generic [ref=f2e207]: category
+            - generic [ref=f2e210]: Extensions
+          - separator [ref=f2e212]
+          - link "terminal System Logs" [ref=f2e213] [cursor=pointer]:
+            - /url: /admin/settings/system-logs
+            - generic [ref=f2e216]: terminal
+            - generic [ref=f2e219]: System Logs
+          - link "bug_report Report Bug" [ref=f2e220] [cursor=pointer]:
+            - /url: https://github.com/directus/directus/issues/new?template=bug_report.yml
+            - generic [ref=f2e223]: bug_report
+            - generic [ref=f2e226]: Report Bug
+          - link "new_releases Request Feature" [ref=f2e227] [cursor=pointer]:
+            - /url: https://roadmap.directus.io/
+            - generic [ref=f2e230]: new_releases
+            - generic [ref=f2e233]: Request Feature
+          - link "Directus 11.17.4" [ref=f2e234] [cursor=pointer]:
+            - /url: https://github.com/directus/directus/releases
+            - img [ref=f2e237]
+            - generic [ref=f2e240]: Directus 11.17.4
+    - separator "Resize"
+    - generic [ref=f2e242]:
+      - list [ref=f2e243]:
+        - link "Skip to Navigation" [ref=f2e244] [cursor=pointer]:
+          - /url: /admin/settings/data-model#navigation
+        - link "Skip to Module Navigation" [ref=f2e245] [cursor=pointer]:
+          - /url: /admin/settings/data-model#module-navigation
+        - link "Skip to Sidebar" [ref=f2e246] [cursor=pointer]:
+          - /url: /admin/settings/data-model#sidebar
+      - generic [ref=f2e248]:
+        - generic [ref=f2e250]:
+          - banner [ref=f2e251]:
+            - generic [ref=f2e252]:
+              - generic [ref=f2e256]: database
+              - generic [ref=f2e257]:
+                - link "Settings" [ref=f2e261] [cursor=pointer]:
+                  - /url: /admin/settings
+                - heading "Data Model" [level=1] [ref=f2e263]:
+                  - generic [ref=f2e264]: Data Model
+              - button "right_panel_close" [ref=f2e265] [cursor=pointer]:
+                - generic [ref=f2e266]: right_panel_close
+            - generic [ref=f2e267]:
+              - search [ref=f2e269]:
+                - generic [ref=f2e271]: search
+                - searchbox "Search Collection..." [active] [ref=f2e272]
+              - button "create_new_folder" [ref=f2e275] [cursor=pointer]:
+                - generic [ref=f2e278]: create_new_folder
+              - link "add" [ref=f2e280] [cursor=pointer]:
+                - /url: /admin/settings/data-model/+
+                - generic [ref=f2e283]: add
+          - main [ref=f2e284]:
+            - generic [ref=f2e285]:
+              - generic [ref=f2e286]:
+                - text: Expand
+                - button "All" [ref=f2e287] [cursor=pointer]
+                - text: /
+                - button "None" [ref=f2e288] [cursor=pointer]
+              - list [ref=f2e289]:
+                - generic [ref=f2e290]:
+                  - link "drag_handle workspaces workspace_folder Workspace unfold_less more_vert" [ref=f2e291] [cursor=pointer]:
+                    - /url: /admin/settings/data-model/workspace_folder
+                    - generic [ref=f2e294]: drag_handle
+                    - generic:
+                      - generic:
+                        - generic: workspaces
+                      - generic: workspace_folder
+                      - generic: Workspace
+                    - button "unfold_less" [ref=f2e295]:
+                      - generic [ref=f2e296]: unfold_less
+                    - button "more_vert" [ref=f2e300]:
+                      - generic [ref=f2e301]: more_vert
+                  - generic [ref=f2e302]:
+                    - link "drag_handle workspaces workspaces Workspaces — top-level organizational unit more_vert" [ref=f2e304] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/workspaces
+                      - generic [ref=f2e307]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: workspaces
+                        - generic: workspaces
+                        - generic: Workspaces — top-level organizational unit
+                      - button "more_vert" [ref=f2e311]:
+                        - generic [ref=f2e312]: more_vert
+                    - link "drag_handle folder projects Projects within a workspace more_vert" [ref=f2e314] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/projects
+                      - generic [ref=f2e317]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: folder
+                        - generic: projects
+                        - generic: Projects within a workspace
+                      - button "more_vert" [ref=f2e321]:
+                        - generic [ref=f2e322]: more_vert
+                    - link "drag_handle description pages Notion-style pages — hierarchical, with blocks and optional database view more_vert" [ref=f2e324] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/pages
+                      - generic [ref=f2e327]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: description
+                        - generic: pages
+                        - generic: Notion-style pages — hierarchical, with blocks and optional database view
+                      - button "more_vert" [ref=f2e331]:
+                        - generic [ref=f2e332]: more_vert
+                    - link "drag_handle view_headline blocks Page content blocks — text, headings, database views, embed more_vert" [ref=f2e334] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/blocks
+                      - generic [ref=f2e337]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: view_headline
+                        - generic: blocks
+                        - generic: Page content blocks — text, headings, database views, embed
+                      - button "more_vert" [ref=f2e341]:
+                        - generic [ref=f2e342]: more_vert
+                    - link "drag_handle table databases_nayo Notion-style databases — full content in JSON schema + data more_vert" [ref=f2e344] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/databases_nayo
+                      - generic [ref=f2e347]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: table
+                        - generic: databases_nayo
+                        - generic: Notion-style databases — full content in JSON schema + data
+                      - button "more_vert" [ref=f2e351]:
+                        - generic [ref=f2e352]: more_vert
+                    - link "drag_handle share page_shares Page-level sharing — explicit user permissions and public share links more_vert" [ref=f2e354] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/page_shares
+                      - generic [ref=f2e357]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: share
+                        - generic: page_shares
+                        - generic: Page-level sharing — explicit user permissions and public share links
+                      - button "more_vert" [ref=f2e361]:
+                        - generic [ref=f2e362]: more_vert
+                    - link "drag_handle group workspace_members Workspace membership — user-to-workspace join table with roles and invitation status more_vert" [ref=f2e364] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/workspace_members
+                      - generic [ref=f2e367]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: group
+                        - generic: workspace_members
+                        - generic: Workspace membership — user-to-workspace join table with roles and invitation status
+                      - button "more_vert" [ref=f2e371]:
+                        - generic [ref=f2e372]: more_vert
+                    - link "drag_handle layers workspace_templates Templates for workspace initialization — used when a new user is created more_vert" [ref=f2e374] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/workspace_templates
+                      - generic [ref=f2e377]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: layers
+                        - generic: workspace_templates
+                        - generic: Templates for workspace initialization — used when a new user is created
+                      - button "more_vert" [ref=f2e381]:
+                        - generic [ref=f2e382]: more_vert
+                - generic [ref=f2e383]:
+                  - link "drag_handle chat ai_chat AI & Chat unfold_less more_vert" [ref=f2e384] [cursor=pointer]:
+                    - /url: /admin/settings/data-model/ai_chat
+                    - generic [ref=f2e387]: drag_handle
+                    - generic:
+                      - generic:
+                        - generic: chat
+                      - generic: ai_chat
+                      - generic: AI & Chat
+                    - button "unfold_less" [ref=f2e388]:
+                      - generic [ref=f2e389]: unfold_less
+                    - button "more_vert" [ref=f2e393]:
+                      - generic [ref=f2e394]: more_vert
+                  - generic [ref=f2e395]:
+                    - link "drag_handle chat ai_chat_sessions AI chat sessions — workspace-scoped, per user more_vert" [ref=f2e397] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_chat_sessions
+                      - generic [ref=f2e400]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: chat
+                        - generic: ai_chat_sessions
+                        - generic: AI chat sessions — workspace-scoped, per user
+                      - button "more_vert" [ref=f2e404]:
+                        - generic [ref=f2e405]: more_vert
+                    - link "drag_handle message ai_messages Messages within AI chat sessions more_vert" [ref=f2e407] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_messages
+                      - generic [ref=f2e410]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: message
+                        - generic: ai_messages
+                        - generic: Messages within AI chat sessions
+                      - button "more_vert" [ref=f2e414]:
+                        - generic [ref=f2e415]: more_vert
+                    - link "drag_handle handyman ai_tool_calls Tool calls made by AI (MCP, database, page, workflow) more_vert" [ref=f2e417] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_tool_calls
+                      - generic [ref=f2e420]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: handyman
+                        - generic: ai_tool_calls
+                        - generic: Tool calls made by AI (MCP, database, page, workflow)
+                      - button "more_vert" [ref=f2e424]:
+                        - generic [ref=f2e425]: more_vert
+                    - link "drag_handle magic_button ai_prompts more_vert" [ref=f2e427] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_prompts
+                      - generic [ref=f2e430]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: magic_button
+                        - generic: ai_prompts
+                      - button "more_vert" [ref=f2e434]:
+                        - generic [ref=f2e435]: more_vert
+                    - link "drag_handle auto_awesome ai_usage AI credit usage per user, session, and model more_vert" [ref=f2e437] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_usage
+                      - generic [ref=f2e440]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: auto_awesome
+                        - generic: ai_usage
+                        - generic: AI credit usage per user, session, and model
+                      - button "more_vert" [ref=f2e444]:
+                        - generic [ref=f2e445]: more_vert
+                    - link "drag_handle payments ai_credit_balances AI credit balances per user/workspace more_vert" [ref=f2e447] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_credit_balances
+                      - generic [ref=f2e450]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: payments
+                        - generic: ai_credit_balances
+                        - generic: AI credit balances per user/workspace
+                      - button "more_vert" [ref=f2e454]:
+                        - generic [ref=f2e455]: more_vert
+                    - link "drag_handle receipt ai_credit_transactions AI credit usage transactions more_vert" [ref=f2e457] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_credit_transactions
+                      - generic [ref=f2e460]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: receipt
+                        - generic: ai_credit_transactions
+                        - generic: AI credit usage transactions
+                      - button "more_vert" [ref=f2e464]:
+                        - generic [ref=f2e465]: more_vert
+                    - link "drag_handle psychology ai_model_runs AI model execution logs — tokens, cost, latency more_vert" [ref=f2e467] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_model_runs
+                      - generic [ref=f2e470]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: psychology
+                        - generic: ai_model_runs
+                        - generic: AI model execution logs — tokens, cost, latency
+                      - button "more_vert" [ref=f2e474]:
+                        - generic [ref=f2e475]: more_vert
+                    - link "drag_handle camera ai_context_snapshots AI context snapshots — per message more_vert" [ref=f2e477] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/ai_context_snapshots
+                      - generic [ref=f2e480]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: camera
+                        - generic: ai_context_snapshots
+                        - generic: AI context snapshots — per message
+                      - button "more_vert" [ref=f2e484]:
+                        - generic [ref=f2e485]: more_vert
+                - generic [ref=f2e486]:
+                  - link "drag_handle payments finances Financial unfold_less more_vert" [ref=f2e487] [cursor=pointer]:
+                    - /url: /admin/settings/data-model/finances
+                    - generic [ref=f2e490]: drag_handle
+                    - generic:
+                      - generic:
+                        - generic: payments
+                      - generic: finances
+                      - generic: Financial
+                    - button "unfold_less" [ref=f2e491]:
+                      - generic [ref=f2e492]: unfold_less
+                    - button "more_vert" [ref=f2e496]:
+                      - generic [ref=f2e497]: more_vert
+                  - generic [ref=f2e498]:
+                    - link "drag_handle payments billing Financials — subscriptions, payments, credits more_vert" [ref=f2e500] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/billing
+                      - generic [ref=f2e503]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: payments
+                        - generic: billing
+                        - generic: Financials — subscriptions, payments, credits
+                      - button "more_vert" [ref=f2e507]:
+                        - generic [ref=f2e508]: more_vert
+                    - link "drag_handle payments payment_history Payment transactions more_vert" [ref=f2e510] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/payment_history
+                      - generic [ref=f2e513]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: payments
+                        - generic: payment_history
+                        - generic: Payment transactions
+                      - button "more_vert" [ref=f2e517]:
+                        - generic [ref=f2e518]: more_vert
+                    - link "drag_handle card_membership payment_plans Available payment plans with credit packages more_vert" [ref=f2e520] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/payment_plans
+                      - generic [ref=f2e523]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: card_membership
+                        - generic: payment_plans
+                        - generic: Available payment plans with credit packages
+                      - button "more_vert" [ref=f2e527]:
+                        - generic [ref=f2e528]: more_vert
+                    - link "drag_handle receipt_long payment_transactions Payment transactions (Stripe, etc.) with credit grants more_vert" [ref=f2e530] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/payment_transactions
+                      - generic [ref=f2e533]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: receipt_long
+                        - generic: payment_transactions
+                        - generic: Payment transactions (Stripe, etc.) with credit grants
+                      - button "more_vert" [ref=f2e537]:
+                        - generic [ref=f2e538]: more_vert
+                    - link "drag_handle credit_card subscriptions User subscriptions and billing plans more_vert" [ref=f2e540] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/subscriptions
+                      - generic [ref=f2e543]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: credit_card
+                        - generic: subscriptions
+                        - generic: User subscriptions and billing plans
+                      - button "more_vert" [ref=f2e547]:
+                        - generic [ref=f2e548]: more_vert
+                - generic [ref=f2e549]:
+                  - link "drag_handle security security_audit Security unfold_less more_vert" [ref=f2e550] [cursor=pointer]:
+                    - /url: /admin/settings/data-model/security_audit
+                    - generic [ref=f2e553]: drag_handle
+                    - generic:
+                      - generic:
+                        - generic: security
+                      - generic: security_audit
+                      - generic: Security
+                    - button "unfold_less" [ref=f2e554]:
+                      - generic [ref=f2e555]: unfold_less
+                    - button "more_vert" [ref=f2e559]:
+                      - generic [ref=f2e560]: more_vert
+                  - generic [ref=f2e561]:
+                    - link "drag_handle security security Security & Audit more_vert" [ref=f2e563] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/security
+                      - generic [ref=f2e566]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: security
+                        - generic: security
+                        - generic: Security & Audit
+                      - button "more_vert" [ref=f2e570]:
+                        - generic [ref=f2e571]: more_vert
+                    - link "drag_handle security security_events Security events and audit log more_vert" [ref=f2e573] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/security_events
+                      - generic [ref=f2e576]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: security
+                        - generic: security_events
+                        - generic: Security events and audit log
+                      - button "more_vert" [ref=f2e580]:
+                        - generic [ref=f2e581]: more_vert
+                    - link "drag_handle history app_audit_logs Application audit log — user actions, system events more_vert" [ref=f2e583] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/app_audit_logs
+                      - generic [ref=f2e586]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: history
+                        - generic: app_audit_logs
+                        - generic: Application audit log — user actions, system events
+                      - button "more_vert" [ref=f2e590]:
+                        - generic [ref=f2e591]: more_vert
+                    - link "drag_handle error error_events Error events logged by backend services more_vert" [ref=f2e593] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/error_events
+                      - generic [ref=f2e596]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: error
+                        - generic: error_events
+                        - generic: Error events logged by backend services
+                      - button "more_vert" [ref=f2e600]:
+                        - generic [ref=f2e601]: more_vert
+                    - link "drag_handle vpn_lock proxy_log Proxy usage log — tracks which proxy was assigned to which session/user, with token consumption and error tracking more_vert" [ref=f2e603] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/proxy_log
+                      - generic [ref=f2e606]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: vpn_lock
+                        - generic: proxy_log
+                        - generic: Proxy usage log — tracks which proxy was assigned to which session/user, with token consumption and error tracking
+                      - button "more_vert" [ref=f2e610]:
+                        - generic [ref=f2e611]: more_vert
+                    - link "drag_handle note admin_notes Internal admin notes on various targets more_vert" [ref=f2e613] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/admin_notes
+                      - generic [ref=f2e616]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: note
+                        - generic: admin_notes
+                        - generic: Internal admin notes on various targets
+                      - button "more_vert" [ref=f2e620]:
+                        - generic [ref=f2e621]: more_vert
+                - generic [ref=f2e622]:
+                  - link "drag_handle integration_instructions integrations_folder Integrations unfold_less more_vert" [ref=f2e623] [cursor=pointer]:
+                    - /url: /admin/settings/data-model/integrations_folder
+                    - generic [ref=f2e626]: drag_handle
+                    - generic:
+                      - generic:
+                        - generic: integration_instructions
+                      - generic: integrations_folder
+                      - generic: Integrations
+                    - button "unfold_less" [ref=f2e627]:
+                      - generic [ref=f2e628]: unfold_less
+                    - button "more_vert" [ref=f2e632]:
+                      - generic [ref=f2e633]: more_vert
+                  - generic [ref=f2e634]:
+                    - link "drag_handle integration_instructions integrations Integrations more_vert" [ref=f2e636] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/integrations
+                      - generic [ref=f2e639]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: integration_instructions
+                        - generic: integrations
+                        - generic: Integrations
+                      - button "more_vert" [ref=f2e643]:
+                        - generic [ref=f2e644]: more_vert
+                    - link "drag_handle database mcp_providers MCP Provider definitions — config_schema, auth_type, capabilities. Sync from mcp_providers.json more_vert" [ref=f2e646] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/mcp_providers
+                      - generic [ref=f2e649]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: database
+                        - generic: mcp_providers
+                        - generic: MCP Provider definitions — config_schema, auth_type, capabilities. Sync from mcp_providers.json
+                      - button "more_vert" [ref=f2e653]:
+                        - generic [ref=f2e654]: more_vert
+                    - link "drag_handle link mcp_connections User MCP connections — OAuth2 or API key per provider more_vert" [ref=f2e656] [cursor=pointer]:
+                      - /url: /admin/settings/data-model/mcp_connections
+                      - generic [ref=f2e659]: drag_handle
+                      - generic:
+                        - generic:
+                          - generic: link
+                        - generic: mcp_connections
+                        - generic: User MCP connections — OAuth2 or API key per provider
+                      - button "more_vert" [ref=f2e663]:
+                        - generic [ref=f2e664]: more_vert
+                - link "drag_handle code_blocks block_type more_vert" [ref=f2e666] [cursor=pointer]:
+                  - /url: /admin/settings/data-model/block_type
+                  - generic [ref=f2e669]: drag_handle
+                  - generic:
+                    - generic:
+                      - generic: code_blocks
+                    - generic: block_type
+                  - button "more_vert" [ref=f2e673]:
+                    - generic [ref=f2e674]: more_vert
+                - link "drag_handle globe globals more_vert" [ref=f2e676] [cursor=pointer]:
+                  - /url: /admin/settings/data-model/globals
+                  - generic [ref=f2e679]: drag_handle
+                  - generic:
+                    - generic:
+                      - generic: globe
+                    - generic: globals
+                  - button "more_vert" [ref=f2e683]:
+                    - generic [ref=f2e684]: more_vert
+                - link "drag_handle bar_chart usage_events Usage tracking events — per user, per action more_vert" [ref=f2e686] [cursor=pointer]:
+                  - /url: /admin/settings/data-model/usage_events
+                  - generic [ref=f2e689]: drag_handle
+                  - generic:
+                    - generic:
+                      - generic: bar_chart
+                    - generic: usage_events
+                    - generic: Usage tracking events — per user, per action
+                  - button "more_vert" [ref=f2e693]:
+                    - generic [ref=f2e694]: more_vert
+              - list [ref=f2e695]
+              - button "chevron_right System Collections" [ref=f2e697] [cursor=pointer]:
+                - generic [ref=f2e698]:
+                  - generic [ref=f2e700]:
+                    - generic [ref=f2e702]: chevron_right
+                    - text: System Collections
+                  - separator [ref=f2e703]
+        - separator "Resize"
+        - generic [ref=f2e706]:
+          - list [ref=f2e707]:
+            - link "Skip to Navigation" [ref=f2e708] [cursor=pointer]:
+              - /url: /admin/settings/data-model#navigation
+            - link "Skip to Module Navigation" [ref=f2e709] [cursor=pointer]:
+              - /url: /admin/settings/data-model#module-navigation
+            - link "Skip to Main Content" [ref=f2e710] [cursor=pointer]:
+              - /url: /admin/settings/data-model#main-content
+          - contentinfo "Module Sidebar" [ref=f2e711]:
+            - heading "download Export Schema chevron_left" [level=3] [ref=f2e714]:
+              - button "download Export Schema chevron_left" [ref=f2e715] [cursor=pointer]:
+                - generic [ref=f2e718]: download
+                - generic [ref=f2e719]: Export Schema
+                - generic [ref=f2e721]: chevron_left
+            - button "AI Assistant chevron_left" [ref=f2e723] [cursor=pointer]:
+              - generic [ref=f2e724]:
+                - img [ref=f2e725]
+                - generic [ref=f2e728]: AI Assistant
+                - generic [ref=f2e730]: chevron_left

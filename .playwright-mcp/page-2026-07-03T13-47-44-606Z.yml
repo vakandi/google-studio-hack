@@ -1,0 +1,246 @@
+- generic [ref=f3e4]:
+  - list [ref=f3e5]:
+    - link "Skip to Module Navigation" [ref=f3e6] [cursor=pointer]:
+      - /url: /admin/insights#module-navigation
+    - link "Skip to Main Content" [ref=f3e7] [cursor=pointer]:
+      - /url: /admin/insights#main-content
+    - link "Skip to Sidebar" [ref=f3e8] [cursor=pointer]:
+      - /url: /admin/insights#sidebar
+  - generic [ref=f3e9]:
+    - generic [ref=f3e12]:
+      - link [ref=f3e14] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=f3e17]
+      - link "people_alt" [ref=f3e20] [cursor=pointer]:
+        - /url: /admin/users
+        - generic [ref=f3e23]: people_alt
+      - link "folder" [ref=f3e25] [cursor=pointer]:
+        - /url: /admin/files
+        - generic [ref=f3e28]: folder
+      - link "insights" [ref=f3e30] [cursor=pointer]:
+        - /url: /admin/insights
+        - generic [ref=f3e33]: insights
+      - link "rocket_launch" [ref=f3e35] [cursor=pointer]:
+        - /url: /admin/deployments
+        - generic [ref=f3e38]: rocket_launch
+      - link "help" [ref=f3e40] [cursor=pointer]:
+        - /url: https://docs.directus.io
+        - generic [ref=f3e43]: help
+      - link "settings" [ref=f3e45] [cursor=pointer]:
+        - /url: /admin/settings
+        - generic [ref=f3e48]: settings
+    - generic [ref=f3e49]:
+      - button "notifications" [ref=f3e52] [cursor=pointer]:
+        - generic [ref=f3e55]: notifications
+      - generic [ref=f3e56]:
+        - button [ref=f3e59] [cursor=pointer]:
+          - img [ref=f3e62]
+        - link "Wael Bousfira" [ref=f3e65] [cursor=pointer]:
+          - /url: /admin/users/8ae31536-3f8f-4274-b113-f711141f68c4
+          - img "Wael Bousfira" [ref=f3e67]
+  - generic [ref=f3e68]:
+    - generic [ref=f3e69]:
+      - list [ref=f3e70]:
+        - link "Skip to Navigation" [ref=f3e71] [cursor=pointer]:
+          - /url: /admin/insights#navigation
+        - link "Skip to Main Content" [ref=f3e72] [cursor=pointer]:
+          - /url: /admin/insights#main-content
+        - link "Skip to Sidebar" [ref=f3e73] [cursor=pointer]:
+          - /url: /admin/insights#sidebar
+      - navigation "Module Navigation" [ref=f3e74]:
+        - generic [ref=f3e75]:
+          - generic [ref=f3e77]: Directus
+          - button "left_panel_close" [ref=f3e78] [cursor=pointer]:
+            - generic [ref=f3e79]: left_panel_close
+        - list [ref=f3e81]:
+          - link "auto_awesome AI & Credits" [ref=f3e82] [cursor=pointer]:
+            - /url: /admin/insights/b184663e-9100-4512-88a2-f896f3f6e70b
+            - generic [ref=f3e85]: auto_awesome
+            - generic [ref=f3e87]: AI & Credits
+          - link "integration_instructions MCP & Intégrations" [ref=f3e88] [cursor=pointer]:
+            - /url: /admin/insights/3a2de9df-4dc7-49e2-a4c6-7336f34e63c7
+            - generic [ref=f3e91]: integration_instructions
+            - generic [ref=f3e93]: MCP & Intégrations
+          - link "description Pages & Contenu" [ref=f3e94] [cursor=pointer]:
+            - /url: /admin/insights/4d8c84de-9f99-4e0b-adcd-14132017be85
+            - generic [ref=f3e97]: description
+            - generic [ref=f3e99]: Pages & Contenu
+          - link "payments Paiements & Abonnements" [ref=f3e100] [cursor=pointer]:
+            - /url: /admin/insights/2460b1f8-2796-4cf2-b2c6-49d7ecaa340a
+            - generic [ref=f3e103]: payments
+            - generic [ref=f3e105]: Paiements & Abonnements
+          - link "vpn_lock Proxy Logs" [ref=f3e106] [cursor=pointer]:
+            - /url: /admin/insights/259f327c-a1d9-446f-9164-3bf98c92c2ba
+            - generic [ref=f3e109]: vpn_lock
+            - generic [ref=f3e111]: Proxy Logs
+          - link "security Sécurité & Logs" [ref=f3e112] [cursor=pointer]:
+            - /url: /admin/insights/746fe52b-a134-472b-bcab-be8aa2ddd432
+            - generic [ref=f3e115]: security
+            - generic [ref=f3e117]: Sécurité & Logs
+          - link "dashboard Vue d'ensemble" [ref=f3e118] [cursor=pointer]:
+            - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88
+            - generic [ref=f3e121]: dashboard
+            - generic [ref=f3e123]: Vue d'ensemble
+    - separator "Resize"
+    - generic [ref=f3e125]:
+      - list [ref=f3e126]:
+        - link "Skip to Navigation" [ref=f3e127] [cursor=pointer]:
+          - /url: /admin/insights#navigation
+        - link "Skip to Module Navigation" [ref=f3e128] [cursor=pointer]:
+          - /url: /admin/insights#module-navigation
+        - link "Skip to Sidebar" [ref=f3e129] [cursor=pointer]:
+          - /url: /admin/insights#sidebar
+      - generic [ref=f3e131]:
+        - generic [ref=f3e133]:
+          - banner [ref=f3e134]:
+            - generic [ref=f3e135]:
+              - generic [ref=f3e139]: insights
+              - heading "Insights" [level=1] [ref=f3e142]:
+                - generic [ref=f3e143]: Insights
+              - button "right_panel_close" [ref=f3e144] [cursor=pointer]:
+                - generic [ref=f3e145]: right_panel_close
+            - generic [ref=f3e146]:
+              - search [ref=f3e148]:
+                - button "search" [ref=f3e149] [cursor=pointer]:
+                  - generic [ref=f3e150]: search
+                - searchbox "Search Dashboard..."
+              - button "add" [ref=f3e153] [cursor=pointer]:
+                - generic [ref=f3e156]: add
+          - main [ref=f3e157]:
+            - table ", Name, Note" [ref=f3e159]:
+              - rowgroup [ref=f3e160]:
+                - row "check_box_outline_blank Sort Descending Note" [ref=f3e161]:
+                  - columnheader "check_box_outline_blank" [ref=f3e162]:
+                    - checkbox "check_box_outline_blank" [ref=f3e163] [cursor=pointer]:
+                      - generic [ref=f3e165]: check_box_outline_blank
+                  - columnheader [ref=f3e166]:
+                    - generic [ref=f3e167]:
+                      - button [disabled]
+                  - columnheader "Sort Descending" [ref=f3e169]:
+                    - button "Sort Descending" [ref=f3e171] [cursor=pointer]:
+                      - generic [ref=f3e172]: Name
+                      - generic [ref=f3e174]: sort
+                  - columnheader "Note" [ref=f3e176]:
+                    - button "Note" [disabled] [ref=f3e178] [cursor=pointer]:
+                      - generic [ref=f3e179]: Note
+                  - columnheader [ref=f3e181]
+                  - columnheader
+              - rowgroup [ref=f3e182]:
+                - row "check_box_outline_blank auto_awesome AI & Credits Detailed AI usage analytics more_vert" [ref=f3e183]:
+                  - cell "check_box_outline_blank" [ref=f3e184]:
+                    - checkbox "check_box_outline_blank" [ref=f3e185] [cursor=pointer]:
+                      - generic [ref=f3e187]: check_box_outline_blank
+                  - cell "auto_awesome" [ref=f3e188]:
+                    - generic [ref=f3e190]: auto_awesome
+                  - cell "AI & Credits" [ref=f3e191]:
+                    - generic [ref=f3e192]: AI & Credits
+                  - cell "Detailed AI usage analytics" [ref=f3e193]:
+                    - generic [ref=f3e194]: Detailed AI usage analytics
+                  - cell [ref=f3e195]
+                  - cell "more_vert" [ref=f3e196]:
+                    - button "more_vert" [ref=f3e199] [cursor=pointer]:
+                      - generic [ref=f3e200]: more_vert
+                - row "check_box_outline_blank integration_instructions MCP & Intégrations MCP provider usage and connection health more_vert" [ref=f3e201]:
+                  - cell "check_box_outline_blank" [ref=f3e202]:
+                    - checkbox "check_box_outline_blank" [ref=f3e203] [cursor=pointer]:
+                      - generic [ref=f3e205]: check_box_outline_blank
+                  - cell "integration_instructions" [ref=f3e206]:
+                    - generic [ref=f3e208]: integration_instructions
+                  - cell "MCP & Intégrations" [ref=f3e209]:
+                    - generic [ref=f3e210]: MCP & Intégrations
+                  - cell "MCP provider usage and connection health" [ref=f3e211]:
+                    - generic [ref=f3e212]: MCP provider usage and connection health
+                  - cell [ref=f3e213]
+                  - cell "more_vert" [ref=f3e214]:
+                    - button "more_vert" [ref=f3e217] [cursor=pointer]:
+                      - generic [ref=f3e218]: more_vert
+                - row "check_box_outline_blank description Pages & Contenu Content analytics more_vert" [ref=f3e219]:
+                  - cell "check_box_outline_blank" [ref=f3e220]:
+                    - checkbox "check_box_outline_blank" [ref=f3e221] [cursor=pointer]:
+                      - generic [ref=f3e223]: check_box_outline_blank
+                  - cell "description" [ref=f3e224]:
+                    - generic [ref=f3e226]: description
+                  - cell "Pages & Contenu" [ref=f3e227]:
+                    - generic [ref=f3e228]: Pages & Contenu
+                  - cell "Content analytics" [ref=f3e229]:
+                    - generic [ref=f3e230]: Content analytics
+                  - cell [ref=f3e231]
+                  - cell "more_vert" [ref=f3e232]:
+                    - button "more_vert" [ref=f3e235] [cursor=pointer]:
+                      - generic [ref=f3e236]: more_vert
+                - row "check_box_outline_blank payments Paiements & Abonnements Revenue and subscription management more_vert" [ref=f3e237]:
+                  - cell "check_box_outline_blank" [ref=f3e238]:
+                    - checkbox "check_box_outline_blank" [ref=f3e239] [cursor=pointer]:
+                      - generic [ref=f3e241]: check_box_outline_blank
+                  - cell "payments" [ref=f3e242]:
+                    - generic [ref=f3e244]: payments
+                  - cell "Paiements & Abonnements" [ref=f3e245]:
+                    - generic [ref=f3e246]: Paiements & Abonnements
+                  - cell "Revenue and subscription management" [ref=f3e247]:
+                    - generic [ref=f3e248]: Revenue and subscription management
+                  - cell [ref=f3e249]
+                  - cell "more_vert" [ref=f3e250]:
+                    - button "more_vert" [ref=f3e253] [cursor=pointer]:
+                      - generic [ref=f3e254]: more_vert
+                - row "check_box_outline_blank vpn_lock Proxy Logs Proxy assignment and usage tracking more_vert" [ref=f3e255]:
+                  - cell "check_box_outline_blank" [ref=f3e256]:
+                    - checkbox "check_box_outline_blank" [ref=f3e257] [cursor=pointer]:
+                      - generic [ref=f3e259]: check_box_outline_blank
+                  - cell "vpn_lock" [ref=f3e260]:
+                    - generic [ref=f3e262]: vpn_lock
+                  - cell "Proxy Logs" [ref=f3e263]:
+                    - generic [ref=f3e264]: Proxy Logs
+                  - cell "Proxy assignment and usage tracking" [ref=f3e265]:
+                    - generic [ref=f3e266]: Proxy assignment and usage tracking
+                  - cell [ref=f3e267]
+                  - cell "more_vert" [ref=f3e268]:
+                    - button "more_vert" [ref=f3e271] [cursor=pointer]:
+                      - generic [ref=f3e272]: more_vert
+                - row "check_box_outline_blank security Sécurité & Logs Security events, audit logs, and errors more_vert" [ref=f3e273]:
+                  - cell "check_box_outline_blank" [ref=f3e274]:
+                    - checkbox "check_box_outline_blank" [ref=f3e275] [cursor=pointer]:
+                      - generic [ref=f3e277]: check_box_outline_blank
+                  - cell "security" [ref=f3e278]:
+                    - generic [ref=f3e280]: security
+                  - cell "Sécurité & Logs" [ref=f3e281]:
+                    - generic [ref=f3e282]: Sécurité & Logs
+                  - cell "Security events, audit logs, and errors" [ref=f3e283]:
+                    - generic [ref=f3e284]: Security events, audit logs, and errors
+                  - cell [ref=f3e285]
+                  - cell "more_vert" [ref=f3e286]:
+                    - button "more_vert" [ref=f3e289] [cursor=pointer]:
+                      - generic [ref=f3e290]: more_vert
+                - row "check_box_outline_blank dashboard Vue d'ensemble Key metrics overview more_vert" [ref=f3e291]:
+                  - cell "check_box_outline_blank" [ref=f3e292]:
+                    - checkbox "check_box_outline_blank" [ref=f3e293] [cursor=pointer]:
+                      - generic [ref=f3e295]: check_box_outline_blank
+                  - cell "dashboard" [ref=f3e296]:
+                    - generic [ref=f3e298]: dashboard
+                  - cell "Vue d'ensemble" [ref=f3e299]:
+                    - generic [ref=f3e300]: Vue d'ensemble
+                  - cell "Key metrics overview" [ref=f3e301]:
+                    - generic [ref=f3e302]: Key metrics overview
+                  - cell [ref=f3e303]
+                  - cell "more_vert" [ref=f3e304]:
+                    - button "more_vert" [ref=f3e307] [cursor=pointer]:
+                      - generic [ref=f3e308]: more_vert
+        - separator "Resize"
+        - generic [ref=f3e311]:
+          - list [ref=f3e312]:
+            - link "Skip to Navigation" [ref=f3e313] [cursor=pointer]:
+              - /url: /admin/insights#navigation
+            - link "Skip to Module Navigation" [ref=f3e314] [cursor=pointer]:
+              - /url: /admin/insights#module-navigation
+            - link "Skip to Main Content" [ref=f3e315] [cursor=pointer]:
+              - /url: /admin/insights#main-content
+          - contentinfo "Module Sidebar" [ref=f3e316]:
+            - heading "publish Import chevron_left" [level=3] [ref=f3e319]:
+              - button "publish Import chevron_left" [ref=f3e320] [cursor=pointer]:
+                - generic [ref=f3e323]: publish
+                - generic [ref=f3e324]: Import
+                - generic [ref=f3e326]: chevron_left
+            - button "AI Assistant chevron_left" [ref=f3e328] [cursor=pointer]:
+              - generic [ref=f3e329]:
+                - img [ref=f3e330]
+                - generic [ref=f3e333]: AI Assistant
+                - generic [ref=f3e335]: chevron_left

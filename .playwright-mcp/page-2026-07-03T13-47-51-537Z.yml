@@ -1,0 +1,154 @@
+- generic [ref=f3e336]:
+  - list [ref=f3e337]:
+    - link "Skip to Module Navigation" [ref=f3e338] [cursor=pointer]:
+      - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#module-navigation
+    - link "Skip to Main Content" [ref=f3e339] [cursor=pointer]:
+      - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#main-content
+    - link "Skip to Sidebar" [ref=f3e340] [cursor=pointer]:
+      - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#sidebar
+  - generic [ref=f3e341]:
+    - generic [ref=f3e344]:
+      - link [ref=f3e346] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=f3e349]
+      - link "people_alt" [ref=f3e352] [cursor=pointer]:
+        - /url: /admin/users
+        - generic [ref=f3e355]: people_alt
+      - link "folder" [ref=f3e357] [cursor=pointer]:
+        - /url: /admin/files
+        - generic [ref=f3e360]: folder
+      - link "insights" [ref=f3e362] [cursor=pointer]:
+        - /url: /admin/insights
+        - generic [ref=f3e365]: insights
+      - link "rocket_launch" [ref=f3e367] [cursor=pointer]:
+        - /url: /admin/deployments
+        - generic [ref=f3e370]: rocket_launch
+      - link "help" [ref=f3e372] [cursor=pointer]:
+        - /url: https://docs.directus.io
+        - generic [ref=f3e375]: help
+      - link "settings" [ref=f3e377] [cursor=pointer]:
+        - /url: /admin/settings
+        - generic [ref=f3e380]: settings
+    - generic [ref=f3e381]:
+      - button "notifications" [ref=f3e384] [cursor=pointer]:
+        - generic [ref=f3e387]: notifications
+      - generic [ref=f3e388]:
+        - button [ref=f3e391] [cursor=pointer]:
+          - img [ref=f3e394]
+        - link "Wael Bousfira" [ref=f3e397] [cursor=pointer]:
+          - /url: /admin/users/8ae31536-3f8f-4274-b113-f711141f68c4
+          - img "Wael Bousfira" [ref=f3e399]
+  - generic [ref=f3e400]:
+    - generic [ref=f3e401]:
+      - list [ref=f3e402]:
+        - link "Skip to Navigation" [ref=f3e403] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#navigation
+        - link "Skip to Main Content" [ref=f3e404] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#main-content
+        - link "Skip to Sidebar" [ref=f3e405] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#sidebar
+      - navigation "Module Navigation" [ref=f3e406]:
+        - generic [ref=f3e407]:
+          - generic [ref=f3e409]: Directus
+          - button "left_panel_close" [ref=f3e410] [cursor=pointer]:
+            - generic [ref=f3e411]: left_panel_close
+        - list [ref=f3e413]:
+          - link "auto_awesome AI & Credits" [ref=f3e414] [cursor=pointer]:
+            - /url: /admin/insights/b184663e-9100-4512-88a2-f896f3f6e70b
+            - generic [ref=f3e417]: auto_awesome
+            - generic [ref=f3e419]: AI & Credits
+          - link "integration_instructions MCP & Intégrations" [ref=f3e420] [cursor=pointer]:
+            - /url: /admin/insights/3a2de9df-4dc7-49e2-a4c6-7336f34e63c7
+            - generic [ref=f3e423]: integration_instructions
+            - generic [ref=f3e425]: MCP & Intégrations
+          - link "description Pages & Contenu" [ref=f3e426] [cursor=pointer]:
+            - /url: /admin/insights/4d8c84de-9f99-4e0b-adcd-14132017be85
+            - generic [ref=f3e429]: description
+            - generic [ref=f3e431]: Pages & Contenu
+          - link "payments Paiements & Abonnements" [ref=f3e432] [cursor=pointer]:
+            - /url: /admin/insights/2460b1f8-2796-4cf2-b2c6-49d7ecaa340a
+            - generic [ref=f3e435]: payments
+            - generic [ref=f3e437]: Paiements & Abonnements
+          - link "vpn_lock Proxy Logs" [ref=f3e438] [cursor=pointer]:
+            - /url: /admin/insights/259f327c-a1d9-446f-9164-3bf98c92c2ba
+            - generic [ref=f3e441]: vpn_lock
+            - generic [ref=f3e443]: Proxy Logs
+          - link "security Sécurité & Logs" [ref=f3e444] [cursor=pointer]:
+            - /url: /admin/insights/746fe52b-a134-472b-bcab-be8aa2ddd432
+            - generic [ref=f3e447]: security
+            - generic [ref=f3e449]: Sécurité & Logs
+          - link "dashboard Vue d'ensemble" [ref=f3e450] [cursor=pointer]:
+            - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88
+            - generic [ref=f3e453]: dashboard
+            - generic [ref=f3e455]: Vue d'ensemble
+    - separator "Resize"
+    - generic [ref=f3e457]:
+      - list [ref=f3e458]:
+        - link "Skip to Navigation" [ref=f3e459] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#navigation
+        - link "Skip to Module Navigation" [ref=f3e460] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#module-navigation
+        - link "Skip to Sidebar" [ref=f3e461] [cursor=pointer]:
+          - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#sidebar
+      - generic [ref=f3e463]:
+        - generic [ref=f3e465]:
+          - banner [ref=f3e466]:
+            - generic [ref=f3e467]:
+              - generic [ref=f3e471]: dashboard
+              - generic [ref=f3e472]:
+                - link "Insights" [ref=f3e476] [cursor=pointer]:
+                  - /url: /admin/insights
+                - heading "Vue d'ensemble" [level=1] [ref=f3e478]:
+                  - generic [ref=f3e479]: Vue d'ensemble
+              - button "right_panel_close" [ref=f3e480] [cursor=pointer]:
+                - generic [ref=f3e481]: right_panel_close
+            - generic [ref=f3e482]:
+              - button "aspect_ratio" [ref=f3e484] [cursor=pointer]:
+                - generic [ref=f3e487]: aspect_ratio
+              - button "edit" [ref=f3e489] [cursor=pointer]:
+                - generic [ref=f3e492]: edit
+          - main [ref=f3e493]:
+            - generic [ref=f3e495]:
+              - generic [ref=f3e496]:
+                - generic: (2:2) 9×5
+              - generic [ref=f3e499]:
+                - generic: (-1:-1) 3×3
+                - paragraph [ref=f3e503]: "0"
+              - generic [ref=f3e504]:
+                - generic: (8:-1) 3×3
+                - paragraph [ref=f3e508]: "0"
+              - generic [ref=f3e509]:
+                - generic: (-1:2) 3×3
+                - paragraph [ref=f3e513]: "0"
+              - generic [ref=f3e514]:
+                - generic: (5:-1) 3×3
+                - paragraph [ref=f3e518]: "0"
+              - generic [ref=f3e519]:
+                - generic: (2:-1) 3×3
+                - paragraph [ref=f3e523]: "0"
+        - separator "Resize"
+        - generic [ref=f3e526]:
+          - list [ref=f3e527]:
+            - link "Skip to Navigation" [ref=f3e528] [cursor=pointer]:
+              - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#navigation
+            - link "Skip to Module Navigation" [ref=f3e529] [cursor=pointer]:
+              - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#module-navigation
+            - link "Skip to Main Content" [ref=f3e530] [cursor=pointer]:
+              - /url: /admin/insights/a3d8a5db-3cb6-46c2-b7fb-d844d1d61a88#main-content
+          - contentinfo "Module Sidebar" [ref=f3e531]:
+            - generic [ref=f3e532]:
+              - heading "chat_bubble_outline Comments chevron_left" [level=3] [ref=f3e534]:
+                - button "chat_bubble_outline Comments chevron_left" [ref=f3e535] [cursor=pointer]:
+                  - generic [ref=f3e538]: chat_bubble_outline
+                  - generic [ref=f3e539]: Comments
+                  - generic [ref=f3e541]: chevron_left
+              - heading "sync_disabled Auto Refresh chevron_left" [level=3] [ref=f3e543]:
+                - button "sync_disabled Auto Refresh chevron_left" [ref=f3e544] [cursor=pointer]:
+                  - generic [ref=f3e547]: sync_disabled
+                  - generic [ref=f3e548]: Auto Refresh
+                  - generic [ref=f3e550]: chevron_left
+            - button "AI Assistant chevron_left" [ref=f3e552] [cursor=pointer]:
+              - generic [ref=f3e553]:
+                - img [ref=f3e554]
+                - generic [ref=f3e557]: AI Assistant
+                - generic [ref=f3e559]: chevron_left
