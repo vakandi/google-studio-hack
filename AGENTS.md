@@ -1,40 +1,74 @@
-# Google Studio Hack — Agent Memory
+# Google Studio Hack
 
-## Known Issues & Fixes
+**Stack**: Python (stdlib) + Chrome MV3 Extension (Vue/TypeScript — pre-compiled)
 
-### Issue: Tab creation URL 404
-**Problem**: Changed tab creation URL from `https://labs.google/flow` to `https://labs.google.com/flow` which is a 404.
+## OVERVIEW
+Automates Google Flow (labs.google.com/fx/tools/flow) video/image generation at scale. REST API server (`server.py`) queues tasks; Chrome extension opens Flow tabs, fills forms via content script, captures download URLs, and uploads results.
 
-**Fix**: Use `https://labs.google/fx/tools/flow` instead — this redirects to the correct `labs.google.com/fx/tools/flow`.
+## STRUCTURE
+```
+./
+├── server.py                             # REST API (port 9876, stdlib-only)
+├── veo-automation-extension/             # Chrome MV3 extension (pre-built)
+├── docs/API-SERVER-PLAN.md              # Architecture doc (partially stale)
+├── results/                             # Downloaded media artifacts
+├── .sisyphus/                           # Sisyphus dev tool tracking
+├── .playwright-mcp/                     # Playwright browser session recordings
+├── AGENTS.md                            # ← this file
+├── insights_*.png                       # Google Flow UI screenshots
+└── __pycache__/                         # Python bytecode cache
+```
 
-**File**: `assets/index.ts-DoSGWp_j.js` line 54
+## WHERE TO LOOK
+| Task | Location | Notes |
+|------|----------|-------|
+| REST API endpoints | `server.py` | All endpoints in one file |
+| Task queue logic | `server.py` `TaskStore` class | Thread-safe in-memory queue |
+| Extension service worker | `veo-automation-extension/assets/index.ts-DoSGWp_j.js` | Tab lifecycle, polling, downloads |
+| Content script (Flow automation) | `veo-automation-extension/assets/index.ts-Bt6B9Lbt.js` | Form fill, generation monitoring |
+| Side panel UI (Vue) | `veo-automation-extension/assets/index.html-B15jV9u5.js` | 162KLOC compiled Vue app |
+| Server-mode UI patch | `veo-automation-extension/assets/server-panel.js` | Non-Vue DOM injection |
+| Extension manifest | `veo-automation-extension/manifest.json` | Permissions, entry points |
+| File upload intercept | `veo-automation-extension/assets/catchUploadFile.ts-DJwIizxX.js` | `HTMLInputElement` monkey-patch |
+| Remote config | `veo-automation-extension/assets/remoteConfig-CbIdrXch.js` | External config fetcher |
+| Known bugs | `AGENTS.md` (below) | 5 documented issues |
+| Server mode design (unimplemented) | `docs/API-SERVER-PLAN.md` | WebSocket+HTTP version |
 
-### Issue: Content script not injecting
-**Problem**: Match patterns `*://labs.google/*` don't match `labs.google.com`.
+## KNOWN BUGS
+| Issue | Root Cause | Fix |
+|-------|-----------|-----|
+| Tab creation URL 404 | `labs.google.com/flow` → 404 | Use `labs.google/fx/tools/flow` |
+| Content script not injecting | `*://labs.google/*` no match `labs.google.com` | All patterns changed to `*://labs.google.com/*` |
+| Infinite regeneration loop | Download failure re-adds prompt index | `_processedGenIndexes` Set skips re-submission |
+| `folderName.trim()` crash | `t.folderName` is `undefined` | `(t.folderName \|\| "").trim()` |
+| Ugly filenames from TRPC | Filename from TRPC path not media ID | Extract `name` query param from URL |
 
-**Fix**: All patterns changed to `*://labs.google.com/*` in manifest.json (content_scripts, host_permissions, web_accessible_resources) and service worker (tabs.query, cookie domain, debugger origin).
+## CONVENTIONS
+- **Python**: stdlib-only (`http.server`, `threading`, `json`, `pathlib`, `uuid`, `urllib.request`). No pip deps.
+- **API**: REST on port 9876, JSON body, CORS wide-open (`*`). Task IDs = `uuid.hex[:12]`.
+- **Task flow**: POST → pending → processing (via poll) → completed/failed/cancelled.
+- **Content script**: `AUTO_FILL_FLOW` message triggers form automation on Flow tab.
+- **Bundles**: Named `{sourceExt}-{contentHash}.js` (Vite convention). NOT built in-repo.
 
-### Issue: Infinite regeneration loop
-**Problem**: Download failure re-adds prompt index to `pendingIndexes`, causing `oe()` to call `$()` again → infinite loop.
+## ANTI-PATTERNS
+- **No `.gitignore` at root** — `__pycache__/`, `.playwright-mcp/`, `results/` not excluded.
+- **No build tooling in-repo** — Extension cannot be modified at source level. Bundles are deploy-only.
+- **`server-panel.js` bolt-on** — Side-panel server UI injected via `<script defer>` outside Vue app. Breaks if Vue re-renders the DOM.
+- **Hardcoded secret** — `remoteConfig-CbIdrXch.js` has `X-Client-Secret` in plaintext.
+- **Orphaned plan** — `docs/API-SERVER-PLAN.md` describes WebSocket server that was never built.
+- **Screenshots at root** — `insights_*.png` pollute workspace top-level.
 
-**Fix**: `_processedGenIndexes` Set in `oe()` tracks indexes already submitted to Google Flow. When `J()` re-adds an index after download failure, it's skipped.
+## COMMANDS
+```bash
+python3 server.py              # Start REST API on port 9876
+# Extension: Chrome → Extensions → Load unpacked → veo-automation-extension/
+curl -X POST http://localhost:9876/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "a cat playing piano"}'
+```
 
-### Issue: folderName.trim() crash
-**Problem**: `t.folderName.trim()` on `undefined` throws, caught by outer catch returning `{success: false}`.
-
-**Fix**: Changed to `(t.folderName || "").trim()`.
-
-### Issue: Ugly filenames from TRPC URLs
-**Problem**: Filename derived from TRPC endpoint path (`media.getMediaUrlRedirect`) instead of media ID.
-
-**Fix**: Extract `name` query param from URL, append proper extension from Content-Type header.
-
-## Pipeline Flow
-1. `POST /api/generate` → task created (pending)
-2. Service worker polls `GET /api/poll` every 10s
-3. Service worker finds/creates Flow tab at `labs.google/fx/tools/flow`
-4. Reloads tab, sends `AUTO_FILL_FLOW` message after 3s
-5. Content script fills form, submits, waits for generation
-6. Content script captures download URL from generated tile
-7. Service worker fetches URL, uploads bytes via `PUT /api/results/<tid>/upload/<filename>`
-8. Task marked completed with result_files populated
+## NOTES
+- The extension is pre-built with Vite. Source `.ts` files are NOT in this repo.
+- Server is single-threaded HTTP + background threads for file downloads.
+- Results stored in `results/{task_id}/` on server filesystem.
+- Extension service worker uses `chrome.alarms` for keepalive.
