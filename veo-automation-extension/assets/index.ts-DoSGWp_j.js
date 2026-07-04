@@ -50,7 +50,7 @@ async function processTask(task) {
   if (!task || task.empty || processingTaskId) return;
   if (task.id === lastProcessedTaskId) return;
   processingTaskId = task.id;
-  let tabs = (await chrome.tabs.query({ url: "*://labs.google.com/*" })).filter(t => t.url && t.url.includes("flow"));
+  let tabs = (await chrome.tabs.query({ url: ["*://labs.google/*", "*://labs.google.com/*"] })).filter(t => t.url && t.url.includes("flow"));
   if (tabs.length === 0) tabs = [await chrome.tabs.create({ url: "https://labs.google/flow" })];
   const tabId = tabs[0].id;
   try {
