@@ -57,6 +57,12 @@ async function processTask(task) {
     await chrome.tabs.reload(tabId);
     setTimeout(async () => {
       try {
+        // wait for tab to finish loading
+        await new Promise(r => {
+          const handler = (tId, info) => { if (tId === tabId && info.status === 'complete') { chrome.tabs.onUpdated.removeListener(handler); r(); } };
+          chrome.tabs.onUpdated.addListener(handler);
+          setTimeout(r, 8000); // safety timeout
+        });
         await chrome.tabs.sendMessage(tabId, {
           type: "AUTO_FILL_FLOW",
           payloads: task.prompts.map(p => ({
