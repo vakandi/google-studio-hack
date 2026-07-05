@@ -9,7 +9,8 @@ Automates Google Flow (labs.google.com/fx/tools/flow) video/image generation at 
 ```
 ./
 ├── server.py                             # REST API (port 9876, stdlib-only)
-├── veo-automation-extension/             # Chrome MV3 extension (pre-built)
+├── veo-automation-extension/             # OUR HACKED VERSION — work here
+├── veo-automation-extension-original/    # ⛔ ORIGINAL — DO NOT TOUCH, reference only
 ├── docs/API-SERVER-PLAN.md              # Architecture doc (partially stale)
 ├── results/                             # Downloaded media artifacts
 ├── .sisyphus/                           # Sisyphus dev tool tracking
@@ -18,6 +19,12 @@ Automates Google Flow (labs.google.com/fx/tools/flow) video/image generation at 
 ├── insights_*.png                       # Google Flow UI screenshots
 └── __pycache__/                         # Python bytecode cache
 ```
+
+## ⛔ CRITICAL RULE: NEVER TOUCH THE ORIGINAL
+- **`veo-automation-extension-original/`** is the STORE VERSION (copied from Edge, has `key` + `update_url` in manifest).
+- This folder exists ONLY as reference — to compare working original code vs our hacked version.
+- **NEVER edit, never load unpacked, never modify** any file inside `veo-automation-extension-original/`.
+- Always work in `veo-automation-extension/` (no `key`, no `update_url`).
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
@@ -31,6 +38,7 @@ Automates Google Flow (labs.google.com/fx/tools/flow) video/image generation at 
 | Extension manifest | `veo-automation-extension/manifest.json` | Permissions, entry points |
 | File upload intercept | `veo-automation-extension/assets/catchUploadFile.ts-DJwIizxX.js` | `HTMLInputElement` monkey-patch |
 | Remote config | `veo-automation-extension/assets/remoteConfig-CbIdrXch.js` | External config fetcher |
+| Original reference (DO NOT TOUCH) | `veo-automation-extension-original/` | Store version — compare only |
 | Known bugs | `AGENTS.md` (below) | 5 documented issues |
 | Server mode design (unimplemented) | `docs/API-SERVER-PLAN.md` | WebSocket+HTTP version |
 
