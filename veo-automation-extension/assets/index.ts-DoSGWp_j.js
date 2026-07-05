@@ -55,33 +55,30 @@ async function processTask(task) {
   const tabId = tabs[0].id;
   try {
     await chrome.tabs.reload(tabId);
-    setTimeout(async () => {
-      try {
-        // wait for tab to finish loading
-        await new Promise(r => {
-          const handler = (tId, info) => { if (tId === tabId && info.status === 'complete') { chrome.tabs.onUpdated.removeListener(handler); r(); } };
-          chrome.tabs.onUpdated.addListener(handler);
-          setTimeout(r, 8000); // safety timeout
-        });
-        await chrome.tabs.sendMessage(tabId, {
-          type: "AUTO_FILL_FLOW",
-          payloads: task.prompts.map(p => ({
-            prompt: p, mode: task.mode, model: task.model, aspectRatio: task.aspectRatio,
-            videoOption: task.videoOption, outputCount: task.outputCount,
-            characters: task.characters || [], speaker: task.speaker || null, images: task.images || []
-          })),
-          groupId: task.id,
-          concurrentPrompts: task.concurrentPrompts || 1,
-          promptDelaySecondsMin: task.promptDelaySecondsMin || 0,
-          promptDelaySecondsMax: task.promptDelaySecondsMax || 0
-        });
-      } catch (e) {
-        processingTaskId = null;
-        serverFetch("/api/result", {
-          method: "POST", body: JSON.stringify({ task_id: task.id, status: "failed", error: "Content script unavailable" })
-        });
-      }
-    }, 3000);
+    await new Promise(r => {
+      const handler = (tId, info) => { if (tId === tabId && info.status === 'complete') { chrome.tabs.onUpdated.removeListener(handler); r(); } };
+      chrome.tabs.onUpdated.addListener(handler);
+      setTimeout(r, 10000);
+    });
+    try {
+      await chrome.tabs.sendMessage(tabId, {
+        type: "AUTO_FILL_FLOW",
+        payloads: task.prompts.map(p => ({
+          prompt: p, mode: task.mode, model: task.model, aspectRatio: task.aspectRatio,
+          videoOption: task.videoOption, outputCount: task.outputCount,
+          characters: task.characters || [], speaker: task.speaker || null, images: task.images || []
+        })),
+        groupId: task.id,
+        concurrentPrompts: task.concurrentPrompts || 1,
+        promptDelaySecondsMin: task.promptDelaySecondsMin || 0,
+        promptDelaySecondsMax: task.promptDelaySecondsMax || 0
+      });
+    } catch (e) {
+      processingTaskId = null;
+      serverFetch("/api/result", {
+        method: "POST", body: JSON.stringify({ task_id: task.id, status: "failed", error: "Content script unavailable" })
+      });
+    }
   } catch (e) {
     processingTaskId = null;
     serverFetch("/api/result", {
